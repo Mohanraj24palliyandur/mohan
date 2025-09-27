@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Your Jathagam</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="min-h-screen bg-gradient-to-b from-indigo-900 to-black text-white flex flex-col items-center p-6">
+
+<div class="mt-12 p-6 bg-white/10 backdrop-blur-lg rounded-2xl shadow-2xl max-w-xl text-center">
+    <h2 class="text-2xl font-semibold mb-4">Your Jathagam</h2>
+    <p>Name: <span th:text=\"${name}\"></span></p>
+    <p>Date of Birth: <span th:text=\"${dob}\"></span></p>
+    <p>Time of Birth: <span th:text=\"${tob}\"></span></p>
+    <p>Place of Birth: <span th:text=\"${place}\"></span></p>
+    <p class="mt-4 text-yellow-300">(Astrology chart & predictions will appear here)</p>
+</div>
+
+</body>
+</html>
